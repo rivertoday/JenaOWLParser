@@ -1,0 +1,493 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#"
+     xml:base="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#主 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#主">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#五脏"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#形体"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#开窍于 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#开窍于">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#五脏"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#官窍"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#性味归经 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#性味归经">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#中药"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#性味"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#方治关系 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#方治关系">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#方剂"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#治法"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#方药关系 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#方药关系">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#方剂"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#中药"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#机证关系 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#机证关系">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#气机"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#证候"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#病位关系 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#病位关系">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#中医生理"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#证候"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#药味关系 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#药味关系">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#中药"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#甘"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#辛"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#药性关系 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#药性关系">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#中药"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#温"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#证治关系 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#证治关系">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#辩证"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#论治"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#通应于 -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#通应于">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#五脏"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#五行"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#名称 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#名称">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#中药"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#中医生理 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#中医生理">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#中药 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#中药">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#论治"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#五脏 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#五脏">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#中医生理"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#五脏证候 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#五脏证候">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#证候"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#五行 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#五行">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#认识方法"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#官窍 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#官窍">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#中医生理"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#形体 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#形体">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#中医生理"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#心证候 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#心证候">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#五脏证候"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#性味 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#性味">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#论治"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#方剂 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#方剂">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#论治"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#气机 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#气机">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#认识方法"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#治法 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#治法">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#论治"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#温 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#温">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#性味"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#火 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#火">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#五行"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#甘 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#甘">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#性味"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#腑脏兼证 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#腑脏兼证">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#证候"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#血 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#血">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#中医生理"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#补法 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#补法">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#治法"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#补益药 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#补益药">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#中药"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#补血 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#补血">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#补法"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#补血药 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#补血药">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#补益药"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#认识方法 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#认识方法">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#论治 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#论治">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#辨证论治"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#证候 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#证候">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#辩证"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#辛 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#辛">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#性味"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#辨证论治 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#辨证论治">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#辩证 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#辩证">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#辨证论治"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#阴阳 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#阴阳">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#认识方法"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#养心汤 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#养心汤">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#方剂"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#夏 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#夏">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#火"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#心 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#心">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#五脏"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#心肾不交证 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#心肾不交证">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#腑脏兼证"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#心脉痹阻证 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#心脉痹阻证">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#心证候"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#心血失养 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#心血失养">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#气机"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#心血虚 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#心血虚">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#气机"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#心血虚证 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#心血虚证">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#心证候"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#脉 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#脉">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#形体"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#舌 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#舌">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#官窍"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#补血养心 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#补血养心">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jianghe/ontologies/2019/1/med_002#补血"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
