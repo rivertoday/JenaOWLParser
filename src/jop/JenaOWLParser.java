@@ -8,6 +8,7 @@ import org.apache.jena.ontology.AllValuesFromRestriction;
 import org.apache.jena.ontology.AnnotationProperty;
 import org.apache.jena.ontology.CardinalityRestriction;
 import org.apache.jena.ontology.ComplementClass;
+import org.apache.jena.ontology.ConversionException;
 import org.apache.jena.ontology.DatatypeProperty;
 import org.apache.jena.ontology.EnumeratedClass;
 import org.apache.jena.ontology.FunctionalProperty;
@@ -128,9 +129,9 @@ public class JenaOWLParser {
 
 	public static void parseIndividual(Individual individual) {
 		OntClass ontClassTmp;
-		System.out.println("NameSpace=" + individual.getNameSpace());
-		System.out.println("LocalName=" + individual.getLocalName());
-		System.out.println("URI=" + individual.getURI());
+		System.out.println("Individual NameSpace=" + individual.getNameSpace());
+		System.out.println("Individual LocalName=" + individual.getLocalName());
+		System.out.println("Individual URI=" + individual.getURI());
 		// Check for belonging class
 		Iterator<? extends OntClass> itrClass = individual.listOntClasses(true);
 		if (itrClass != null) {
@@ -138,8 +139,14 @@ public class JenaOWLParser {
 			if (hasClass == true) {
 				System.out.println("Belongs to Class:");
 				while (itrClass.hasNext()) {
-					ontClassTmp = itrClass.next();
-					System.out.println("Class URI=" + ontClassTmp.getURI());
+					try {
+						//System.out.println("Debug:" + itrClass.hashCode());
+						ontClassTmp = itrClass.next();
+						System.out.println("Class URI=" + ontClassTmp.getURI());
+					} catch (ConversionException convExp) {
+						//System.out.println("Debug:" + itrClass.hashCode());
+						System.out.println("Debug:" + convExp.toString());
+					}
 				}
 			}
 		}
